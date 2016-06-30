@@ -29,10 +29,9 @@ import (
 var verboseUpdate bool
 
 var updateCommand = &cobra.Command{
-	Use:     "update",
-	Aliases: []string{"up"},
-	Short:   "update information on available charts in the chart repositories",
-	RunE:    runUpdate,
+	Use:   "update",
+	Short: "update information on available charts in the chart repositories",
+	RunE:  runUpdate,
 }
 
 func init() {
